@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry Humpty: Contact Us </title>
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/apple-touch-icon.png" />
+    <!-- Linking CSS  -->
+    <link rel="stylesheet" type="text/css" href="contact-us.css" />
+    <!-- Font Awesome Kit Code  -->
+    <script
+      src="https://kit.fontawesome.com/ee2093fa90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- creating a navbar  -->
+    <nav>
+      <a href="index.html">
+        <img src="./images/logo- light.png" alt="logo"
+      /></a>
+      <div class="navlinks" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="restaurant.html"> Search a Restaurant </a></li>
+          <li><a href="contact-us.html"> Contact Us </a></li>
+          <li><a href="About-us.html"> About us </a></li>
+          <a href="index.html"
+            ><img src="./images/nav-and-footer.png" alt=""
+          /></a>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <!-- Javascript for toggle menu  -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0px";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <section id="container">
+      <h2>Want to <span> Connect </span> with us ?</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit fugiat
+        quis dolores, animi nisi iste optio porro!
+      </p>
+    </section>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Victoria Street, Mumbai</div>
+            <div class="text-two">Maharashtra, India.</div>
+          </div>
+          <div class="phone details">
+            <i class="fa-solid fa-phone"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">(+91) 8828911968</div>
+            <div class="text-two">(+91) 9137734478</div>
+          </div>
+          <div class="email details">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">siidjadhav170801@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="topic-text">Send us a Message</div>
+          <form action="#">
+            <div class="input-box">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" Your name"
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                name="name"
+                id="name"
+                placeholder=" Your Email"
+              />
+            </div>
+            <div class="input-box message-box">
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+              ></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Submit your message" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container1">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About Hungry Humpty</h4>
+            <ul>
+              <li><a href="#"> Who we are </a></li>
+              <li><a href="#"> Blog </a></li>
+              <li><a href="#"> Work with us </a></li>
+              <li><a href="#"> Investor relations </a></li>
+              <li><a href="#"> Report Fraud </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Humptyverse</h4>
+            <ul>
+              <li><a href="#"> Hungry Humpty </a></li>
+              <li><a href="#"> Feeding India </a></li>
+              <li><a href="#"> Hyperpure </a></li>
+              <li><a href="#"> Humptyland </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>For Restaurnts</h4>
+            <ul>
+              <li><a href="#">Partner with us</a></li>
+              <li><a href="#">Apps for you</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="end-note">
+        &copy;2022 | Developed by
+        <a href="https://www.linkedin.com/in/siidjadhav/" target="_blank"> Siddhesh Jadhav </a>
+      </p>
+    </footer>
+  </body>
+</html>

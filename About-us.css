@@ -1,0 +1,279 @@
+/* Importing fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600;800&display=swap");
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+*::selection {
+  background-color: #fc6011;
+}
+/* Fixing size of logo image  */
+nav img {
+  width: 300px;
+}
+/* Aligning logo and nav  */
+nav {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Fixing alignments of navbar contents  */
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+/* Designing contents of navbar  */
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+}
+/* Decorating list items  */
+.navlinks ul li a {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.navlinks ul li a .active {
+  font-weight: 700;
+}
+/* Hiding X-Mark  */
+nav .fa-solid {
+  display: none;
+}
+/* Hiding logo on nav section  */
+ul img {
+  display: none;
+}
+/* Effect on hover  */
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fc6011;
+  display: block;
+  margin: auto;
+  transition: 1s;
+}
+.navlinks ul li a:hover {
+  font-weight: 700;
+}
+/* Adding CSS so that the above effect shall be seen on hover  */
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.container1 span {
+  color: #fc6011;
+}
+/* Profile Section */
+.container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container2 img {
+  width: 400px;
+}
+.container2 p {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 20px;
+}
+.container2 span {
+  color: #fc6011;
+}
+.container2 a i {
+  font-size: 40px;
+  color: #fc6011;
+  margin: 5px 10px;
+}
+/* Decorating footer  */
+.container {
+  max-width: 1170px;
+  margin: auto;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #cad2c5;
+  margin-top: 50px;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fc6011;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer ul li a:hover {
+  color: #fc6011;
+  padding-left: 8px;
+}
+.fa-brands {
+  font-size: 22px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 45px;
+  border: solid 2px #fc6011;
+  border-radius: 50%;
+  color: black;
+}
+.footer-col .social-links a:hover {
+  background-color: #fc6011;
+}
+/* footer end-note  */
+.end-note {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.end-note a {
+  text-decoration: none;
+  color: #fc6011;
+}
+
+/* Adding Media Queries */
+@media (max-width: 800px) {
+  /* Fixing size of logo image  */
+  nav img {
+    width: 150px;
+  }
+  /* Adjusting Navbar  */
+  .navlinks ul {
+    padding: 10px;
+  }
+  .navlinks ul li {
+    display: block;
+  }
+  /* Displaying list items */
+  .navlinks ul li a {
+    display: block;
+    font-size: 16px;
+    color: white;
+  }
+  /* Adjusting Navbar Contents  */
+  .navlinks {
+    position: absolute;
+    background: #fc6011;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  /* Displaying logo on nav section  */
+  ul img {
+    display: block;
+    width: 150px;
+    margin-top: 370px;
+  }
+  /* Displaying X-Mark  */
+  nav .fa-solid {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .container1 {
+    font-size: 20px;
+  }
+  /* Profile Section */
+  .container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container2 img {
+    width: 250px;
+  }
+  .container2 p {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .container2 span {
+    color: #fc6011;
+  }
+  .container2 a i {
+    font-size: 40px;
+    color: #fc6011;
+    margin: 5px 10px;
+  }
+  /* Decorating footer  */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .footer-col h4 {
+    font-size: 14px;
+  }
+  .footer-col ul li a {
+    font-size: 12px;
+  }
+  .fa-brands {
+    font-size: 20px;
+  }
+  .footer-col .social-links a {
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+  }
+  /* footer end-note  */
+  .end-note {
+    font-size: 14px;
+  }
+}

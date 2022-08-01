@@ -1,0 +1,362 @@
+/* Importing fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600;800&display=swap");
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: #fc6011;
+}
+/* Fixing size of logo image  */
+nav img {
+  width: 300px;
+}
+/* Aligning logo and nav  */
+nav {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Fixing alignments of navbar contents  */
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+/* Designing contents of navbar  */
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+}
+/* Decorating list items  */
+.navlinks ul li a {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+/* Hiding X-Mark  */
+nav .fa-solid {
+  display: none;
+}
+/* Hiding logo on nav section  */
+ul img {
+  display: none;
+}
+/* Designing bg  */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./images/landing-page-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* Effect on hover  */
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fc6011;
+  display: block;
+  margin: auto;
+  transition: 1s;
+}
+.navlinks ul li a:hover {
+  font-weight: 700;
+}
+/* Adding CSS so that the above effect shall be seen on hover  */
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+/* Adding CSS to Landing page contents  */
+.textbox {
+  width: 90%;
+  color: #f1faee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Adding CSS to Hungry Humpty heading  */
+.textbox h1 {
+  font-size: 110px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+/* Adding CSS to 'Hungry'  */
+.textbox h1 span {
+  color: #fc6011;
+}
+/* Adding CSS to 'We feel your hunger' */
+.textbox p {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin: -40px 0px 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Adding CSS to 'Order Now' button */
+.hero-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: 700;
+  background-color: #fc6011;
+}
+/* Showcasing Effect on hover on .hero-btn  */
+.hero-btn:hover {
+  background-color: black;
+  color: #fc6011;
+  transition: 0.2s;
+}
+/* Adding CSS to 'Our Services' */
+.title {
+  text-align: center;
+  font-size: 60px;
+  margin: 50px 0 50px;
+  color: #fc6011;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+/* Adding CSS to boxes  */
+#services {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2px;
+}
+#services .box {
+  border: 10px solid #fc6011;
+  padding: 30px;
+  margin: 20px 10px;
+  border-radius: 25px;
+  background-color: black;
+  color: #f1faee;
+}
+#services .box img {
+  padding: auto;
+  display: block;
+  width: 450px;
+  margin: auto;
+}
+#services h3 {
+  color: #fc6011;
+  text-align: center;
+  font-size: 35px;
+  margin: 15px 0 15px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+#services p {
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 20px;
+}
+/* Adding CSS to Brands  */
+#partners .brand {
+  display: flex;
+  justify-content: center;
+}
+#partners .brand img {
+  width: 200px;
+}
+/* Decorating footer  */
+.container{
+    max-width: 1170px;
+    margin: auto;
+    font-family: "Baloo Bhaijaan 2", cursive;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #cad2c5;
+    margin-top: 50px;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color:black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer-col h4::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fc6011;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li  a{
+  font-size: 18px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer ul li a:hover{
+  color: #fc6011;
+  padding-left: 8px;
+}
+.fa-brands{
+  font-size: 22px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 45px;
+  border: solid 2px #fc6011;
+  border-radius: 50%;
+  color: black;
+}
+.footer-col .social-links a:hover{
+  background-color: #fc6011;
+}
+/* footer end-note  */
+.end-note{
+  font-size: 18px;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.end-note a{
+  text-decoration: none;
+  color: #fc6011;
+}
+
+
+/* Adding Media Queries */
+@media (max-width: 800px) {
+  /* Fixing size of logo image  */
+  nav img {
+    width: 150px;
+  }
+  /* Adjusting 'Hungry Humpty' text  */
+  .textbox h1 {
+    font-size: 32px;
+  }
+  /* Adjusting we feel your hunger */
+  .textbox p {
+    font-size: 16px;
+    margin: -15px 0px 40px;
+  }
+  /* Ajusting 'Order Now' Button  */
+  .hero-btn {
+    font-size: 20px;
+  }
+  /* Adjusting 'Our Services' */
+  .title {
+    font-size: 32px;
+  }
+  /* Adjusting Navbar  */
+  .navlinks ul {
+    padding: 10px;
+  }
+  .navlinks ul li {
+    display: block;
+  }
+  /* Displaying list items */
+  .navlinks ul li a {
+    display: block;
+    font-size: 16px;
+  }
+  /* Adjusting Navbar Contents  */
+  .navlinks {
+    position: absolute;
+    background: #fc6011;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  /* Displaying logo on nav section  */
+  ul img {
+    display: block;
+    width: 150px;
+    margin-top: 370px;
+  }
+  /* Displaying X-Mark  */
+  nav .fa-solid {
+    display: flex;
+    justify-content: flex-end;
+    color: #f1faee;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #services {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #services .box img {
+    width: 200px;
+  }
+  #services h3 {
+    font-size: 16px;
+  }
+  #services p {
+    font-size: 12px;
+  }
+  /* Adding CSS to brands  */
+  #partners .brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  #partners .brand img {
+    width: 110px;
+  }
+
+/* Decorating footer  */
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.footer-col h4{
+  font-size: 14px;
+}
+.footer-col ul li  a{
+  font-size: 12px;
+}
+.fa-brands{
+  font-size: 20px;
+}
+.footer-col .social-links a{
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+}
+/* footer end-note  */
+.end-note{
+  font-size: 14px;
+}
+}

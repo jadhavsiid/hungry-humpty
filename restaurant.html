@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry Humpty: Search a Restaurant</title>
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/apple-touch-icon.png" />
+    <!-- Linking CSS  -->
+    <link rel="stylesheet" type="text/css" href="restaurant.css" />
+    <!-- Font Awesome Kit Code  -->
+    <script
+      src="https://kit.fontawesome.com/ee2093fa90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- creating a navbar  -->
+    <nav>
+      <a href="index.html">
+        <img src="./images/logo- light.png" alt="logo"
+      /></a>
+      <div class="navlinks" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+        <ul>
+          <li>
+            <a href="restaurant.html" class="active"> Search a Restaurant </a>
+          </li>
+          <li><a href="contact-us.html"> Contact Us </a></li>
+          <li><a href="About-us.html"> About us </a></li>
+          <a href="index.html"
+            ><img src="./images/nav-and-footer.png" alt=""
+          /></a>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <!-- Javascript for toggle menu  -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0px";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <div class="container1">
+      <h1>Search a <span>Restaurant</span></h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1658498934308!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="container2">
+      <form>
+        <i class="fa-solid fa-location-crosshairs"></i>
+        <input
+          type="text"
+          placeholder="Enter your Location or Search through Map"
+        />
+      </form>
+      <button type="submit">Search</button>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About Hungry Humpty</h4>
+            <ul>
+              <li><a href="#"> Who we are </a></li>
+              <li><a href="#"> Blog </a></li>
+              <li><a href="#"> Work with us </a></li>
+              <li><a href="#"> Investor relations </a></li>
+              <li><a href="#"> Report Fraud </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Humptyverse</h4>
+            <ul>
+              <li><a href="#"> Hungry Humpty </a></li>
+              <li><a href="#"> Feeding India </a></li>
+              <li><a href="#"> Hyperpure </a></li>
+              <li><a href="#"> Humptyland </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>For Restaurnts</h4>
+            <ul>
+              <li><a href="#">Partner with us</a></li>
+              <li><a href="#">Apps for you</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="end-note">
+        &copy;2022 | Developed by
+        <a href="https://www.linkedin.com/in/siidjadhav/" target="_blank">
+          Siddhesh Jadhav
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
